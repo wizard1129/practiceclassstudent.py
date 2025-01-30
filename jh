@@ -1,0 +1,23 @@
+class student:
+    def __init__(self,age,name,height,subjects,school):
+        self.age = age
+        self.name = name
+        self.height = height
+        self.subjects = subjects
+        self.school = school
+
+    def behave(self):
+        print("I am ",self.age," years old, my name is ",self.name," and I am ",self.height,".I go to ",self.school," and I learn ",self.school,".")
+
+    def modify(self):
+        new_school = input("Enter the new school.")
+        print("Old school",self.school)
+        self.school = new_school
+        new_subjects = input("Enter the new subjects.")
+        print("Old subjects",self.subjects)
+        self.subjects = new_subjects
+
+p1 = student(10,"Avyaan",5.3,"Math,Science,English,History,P.E.,electives","William Hopkins MIddle School")
+p2 = student(36,"Stephen Curry",6.2,"Math,Science,English,History,P.E.,electives","NBA coaching")
+
+p1.modify()
